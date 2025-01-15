@@ -1,0 +1,515 @@
+/*#00BF3D Cor para o Site, sujeita a mudança*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00ADB5;
+    border-radius: 10px;
+}
+
+body {
+    background-color: #0B192C;
+    
+}
+
+.section-inicio {
+    display: grid;
+    min-height: 100vh;
+}
+
+.voltar-inicio {
+    text-align: right;
+    padding: 10px;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    transition: opacity 0.5s ease, visibility 0.2s ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9992;
+}
+
+.voltar-inicio.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.voltar-inicio i {
+    font-size: 18pt;
+    filter: drop-shadow(5px 5px 8px #000000bb);
+}
+
+.voltar-inicio a {
+    color: #00ADB5;
+}
+
+.voltar-inicio a:hover {
+    color: #0082b5;
+}
+
+/* MENU DESKTOP */
+.nav-desktop nav {
+    background-color: #000000;
+    font-family: poppinsregular;
+    font-size: 14pt;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.nav-desktop nav a {
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+.nav-desktop nav a::after {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #0082b5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.6s ease-in-out;
+    border-radius: 2px;
+}
+
+.nav-desktop nav a:hover::after {
+    width: 100%;
+}
+
+.nav-desktop {
+    background-color: #000000;
+}
+
+/* MENU DESKTOP */
+
+.btn-abrir-menu,
+.overlay-menu {
+    display: none;
+}
+
+/* Menu MOBILE */
+.btn-abrir-menu {
+    text-align: right;
+    padding: 10px 4%;
+}
+
+.btn-abrir-menu i {
+    color: #0082b5;
+    font-size: 40px;
+}
+
+.nav-mobile {
+    display: none;
+    background-color: #000000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+    font-family: poppinsregular;
+}
+
+.nav-mobile.abrir-menu {
+    width: 60%;
+}
+
+.nav-mobile.abrir-menu~.overlay-menu {
+    display: block;
+}
+
+.nav-mobile nav ul {
+    text-align: right;
+    list-style-type: none;
+}
+
+.nav-mobile nav ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 10px 8%;
+}
+
+.nav-mobile nav ul li a:hover {
+    color: #0082b5;
+}
+
+.nav-mobile .btn-fechar {
+    padding: 20px 5%;
+}
+
+.nav-mobile .btn-fechar i {
+    display: block;
+    color: #0082b5;
+    font-size: 30px;
+    position: relative;
+}
+
+.overlay-menu {
+    background-color: #0000009d;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/* Menu MOBILE */
+
+.inicio{
+    display: flex;
+    justify-content: space-between;
+    font-family: poppinsmedium;
+    padding: 50px 80px;
+    color: white;
+    margin-top: 0%;
+}
+.title-inicio{
+    margin-top: 5%;
+}
+#subtitle-inicio{
+    color: #00ADB5;
+    font-size: 16pt;
+
+}
+#txt-inicio{
+    margin-right: 40%;
+}
+.inicio p {
+    /* padding-left: 68px; */
+    font-size: 12pt;
+}
+.inicio a {
+    text-decoration: none;
+    color: white;
+    font-family: poppinsregular;
+}
+.img-inicio{
+    width: 40%;
+}
+#foto {
+    width: 400px;
+}
+/* Estilos para o botão */
+.botao-contato {
+    background-color: #0082b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover: Cor de fundo muda ao passar o mouse */
+.botao-contato:hover {
+    background-color: #005f8a;
+    transform: scale(1.05);
+}
+
+/* Clique: Efeito de pressionado */
+.botao-contato:active {
+    background-color: #003f5a;
+    transform: scale(0.95);
+}
+.divRedes {
+    padding-top: 20px;
+    text-align: center;
+}
+.divRedes i{
+    color: #0082b5;
+    font-size: 20pt;
+    padding-left: 1%;
+}
+.divRedes i:hover{
+    color: #ffffff;
+    transition: 1s;
+}
+
+.topo {
+    position: relative;
+    padding-bottom: 5%;
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+}
+
+.sobremim {
+    position: relative;
+    padding-top: 5%;
+    align-content: center;
+    text-align: center;
+    padding: 50px 80px;
+}
+.title {
+    font-size: 45px;
+    color: white;
+    font-family: poppinsregular;
+}
+
+#txtsobremim {
+    color: white;
+    position: relative;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20px;
+    line-height: 23px;
+    font-size: 18px;
+    text-align: justify;
+    font-family: poppinsregular;
+}
+
+.habilidades {
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.conteudo-habilidades{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cards{
+    display: block;
+    width: 50%;
+}
+
+.cards-habilidades1 {
+    display: flex;
+}
+
+.cards-habilidades2 {
+    display: flex;
+}
+.grupo-cards{
+    display: flex;
+    width: 100%;
+}
+/* CÓDIGO PARA PASSAR O MOUSE E MOSTRAR UM TEXTO */
+.txts{
+    width: 50%;
+    text-align: left;
+}
+#txtfixo {
+    padding: 5%;
+    /* width: 100%; */
+    font-size: 14pt;
+    color: rgb(138, 131, 131);
+}
+
+#txt1,
+#txt2,
+#txt3,
+#txt4,
+#txt5,
+#txt6,
+#txt7,
+#txt8 {
+    border: solid 1px;
+    display: none;
+    padding: 3%;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 14pt;
+    color: rgb(177, 171, 171);
+    font-family: poppinsregular;
+    margin-top: 10px;
+}
+/* CÓDIGO PARA PASSAR O MOUSE E MOSTRAR UM TEXTO */
+
+#icons {
+    font-size: 300%;
+    color: #00ADB5;
+    transform: translateY(-50%);
+    line-height: 1.5;
+}
+
+#card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8{
+    width: 100%;
+    background-color: #142a42;
+    margin-top: 3%;
+    margin-left: 3%;
+    transition: 1.3s;
+    border-radius: 5px;
+    align-content: center;
+    border: solid 1px #142a42;
+    overflow: hidden;
+    
+}
+
+#card1:hover, #card2:hover, #card3:hover, #card4:hover, #card5:hover, #card6:hover, #card7:hover, #card7:hover, #card8:hover{
+    border-color: #00ADB5;
+    transition: 1s;
+}
+
+.projetos {
+    align-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#title3 {
+    font-size: 50px;
+    color: white;
+    font-family: poppinsregular;
+    margin-top: 10px;
+}
+.meusprojetos {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    padding: 50px 70px;
+}
+
+#subtitle {
+    font-size: 18pt;
+    color: white;
+    position: relative;
+    font-family: poppinsregular;
+}
+
+#cardProjeto1, #cardProjeto2, #cardProjeto3{
+    width: 30%;
+    border: none;
+    border-bottom: solid 3px #00ADB5;
+    border-radius: 20px 0 0 0;
+    box-shadow: 20px 5px 50px rgba(0, 0, 0, 0.233);
+    transition: 1s;
+    padding: 50px 10px;
+    background-color: #142a42;
+}
+
+.txtcard {
+    color: #a7a7a7;
+    margin-top: 6%;
+    font-family: poppinsregular;
+    
+}
+.linkcard{
+    text-align: right;
+}
+.link{
+    text-decoration: none;
+    color: #00ADB5;
+    font-size: 14pt;
+}
+.link:hover {
+    color: #0082b5;
+}
+
+.contato{
+    text-align: center;
+    font-family: poppinsregular;
+    padding: 50px 80px;
+}
+.contato p{
+    font-size: 12pt;
+}
+
+.formas-contatos i{
+    color: white;
+    font-size: 14pt;
+}
+.formas-contatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    color: #ffffff; /* Cor rosa similar à da imagem */
+    padding: 40px 0px;
+    
+}
+
+.formas-contatos i {
+    font-size: 24px;
+}
+
+.formas-contatos span {
+    font-size: 18px;
+    font-family: poppinsmedium;
+}
+
+.formas-contatos p {
+    margin: 0;
+    font-size: 14px;
+    /* color: #666; */
+}
+
+footer {
+    padding: 50px 80px;
+    background-color: #000000;
+    margin-top: 8%;
+    font-family: poppinsregular;
+    color: white;
+}   
+.conteudo-footer h1{
+    width: 50px;
+}
+.responsive-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-footer a{
+    text-decoration: none;
+    /* padding: 0px 20px; */    
+    font-size: 14pt;
+    color: white;
+}
+.menu-footer a:hover{
+    color: #00ADB5;
+    transition: 0.5s;
+}
+.menu-footer ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.icons-footer{
+    text-align: center;
+    padding: 30px 0px;
+}
+.icons-footer a{
+    padding: 0px 10px;
+    color: white;
+}
+.icons-footer a:hover{
+    color: #00ADB5;
+    transition: 0.5s;
+}
+.icons-footer i{
+    font-size: 18pt;
+    
+}
+.txtfooter {
+    font-size: 12pt;
+    text-align: center;
+    margin-top: 10px;
+    color: #a7a7a7;
+}
+
+.linkfooter {
+    text-decoration: none;
+    color: #00BF3D;
+}
