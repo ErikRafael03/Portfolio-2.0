@@ -15,6 +15,17 @@ overlay.addEventListener('click', () => {
 })
 // fim MENU MOBILE
 
+// BOTÃO CONTATO
+function scrollToSection(event) {
+    event.preventDefault(); // Previne o comportamento padrão do link
+    
+    const section = document.querySelector("#section-contato"); // Seleciona a seção desejada
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" }); // Rola suavemente até a seção
+    }
+  }
+// BOTÃO CONTATO
+
 // VOLTAR AO INICIO
 const backToTop = document.getElementById("voltarInicio");
 
