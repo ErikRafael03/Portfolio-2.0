@@ -107,7 +107,7 @@ body {
 }
 
 .btn-abrir-menu i {
-    color: #00ADB5;
+    color: #0082b5;
     font-size: 40px;
 }
 
@@ -210,7 +210,7 @@ body {
 }
 /* Estilos para o botão */
 .botao-contato {
-    background-color: #00ADB5;
+    background-color: #0082b5;
     color: white;
     border: none;
     border-radius: 5px;
@@ -410,6 +410,7 @@ body {
     color: #a7a7a7;
     margin-top: 6%;
     font-family: poppinsregular;
+    text-align: justify;
     
 }
 .linkcard{
@@ -423,7 +424,6 @@ body {
 .link:hover {
     color: #0082b5;
 }
-
 .contato{
     text-align: center;
     font-family: poppinsregular;

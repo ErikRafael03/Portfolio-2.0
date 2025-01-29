@@ -17,11 +17,12 @@ overlay.addEventListener('click', () => {
 
 // BOTÃO CONTATO
 function scrollToSection(event) {
-    event.preventDefault(); // Previne o comportamento padrão do link
-    
-    const section = document.querySelector("#section-contato"); // Seleciona a seção desejada
+    event.preventDefault(); // Evita qualquer comportamento padrão do botão
+    const targetId = "contato"; // ID da seção de destino
+    const section = document.getElementById(targetId);
+
     if (section) {
-      section.scrollIntoView({ behavior: "smooth", block: "start" }); // Rola suavemente até a seção
+      section.scrollIntoView({ behavior: "smooth" }); // Rola suavemente até a seção
     }
   }
 // BOTÃO CONTATO
