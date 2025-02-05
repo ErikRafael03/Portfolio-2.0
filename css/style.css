@@ -17,6 +17,7 @@
 
 body {
     background-color: #0B192C;
+    transition: 0.5s;
     
 }
 
@@ -52,7 +53,7 @@ body {
 }
 
 .voltar-inicio a:hover {
-    color: #00ADB5;
+    color: #008188;
 }
 
 /* MENU DESKTOP */
@@ -62,7 +63,7 @@ body {
     font-size: 14pt;
     text-align: center;
     padding: 20px;
-
+    transition: 0.5s;
 }
 
 .nav-desktop nav a {
@@ -94,16 +95,27 @@ body {
 }
 
 /* MENU DESKTOP */
-
-.btn-abrir-menu,
-.overlay-menu {
+.topo-mobile{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+.btn-abrir-menu{
+    display: none;
+}
+.overlay-menu{
     display: none;
 }
 
 /* Menu MOBILE */
+.topo-mobile{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
 .btn-abrir-menu {
     text-align: right;
-    padding: 10px 4%;
+    padding: 10px 0%;
 }
 
 .btn-abrir-menu i {
@@ -123,6 +135,7 @@ body {
     overflow: hidden;
     transition: .5s;
     font-family: poppinsregular;
+    transition: 0.5s;
 }
 
 .nav-mobile.abrir-menu {
@@ -213,6 +226,7 @@ body {
     background-color: #0082b5;
     color: white;
     border: none;
+    width: 150px;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 16px;
@@ -232,7 +246,6 @@ body {
     background-color: #003f5a;
     transform: scale(0.95);
 }
-
 
 .divRedes{
     text-align: center;
@@ -257,6 +270,7 @@ body {
     background-color: #000000;
     width: 100%;
     height: 100%;
+    transition: 0.5s;
 }
 
 .sobremim {

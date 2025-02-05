@@ -1,0 +1,107 @@
+.dark{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+.trilho{
+    width: 60px;
+    height: 20px;
+    background-color: #353535;
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.trilho .indicador{
+    width: 20px;
+    height: 20px;
+    background-color: #00ADB5;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+}
+.trilho.tema{
+    background-color: #aaa9a9;
+}
+.trilho.tema .indicador{
+    left: 39px;
+    background-color: white;
+}
+body.tema{
+    background-color: rgb(238, 238, 238);
+}
+body.tema .topo{
+    background-color: #26303b;
+}
+body.tema .nav-desktop nav{
+    background-color: #26303b;
+}
+body.tema .nav-mobile{
+    background-color: #26303b;
+}
+
+body.tema .title{
+    color: #181818;
+}
+body.tema #txtsobremim{
+    color: #414141;
+}
+body.tema #card1{
+    background-color: #26303b;
+    border: #26303b;
+}
+body.tema #card2{
+    background-color: #26303b;
+    border: #26303b;
+}
+body.tema #card3{
+    background-color: #26303b;
+    border: #26303b;
+}
+body.tema #card4{
+    background-color: #26303b;
+    border: #26303b;
+}
+body.tema #card5{
+    background-color: #26303b;
+    border: #26303b;
+}
+body.tema #card6{
+    background-color: #26303b;
+    border: #26303b;
+}
+body.tema #card7{
+    background-color: #26303b;
+    border: #26303b;
+}
+body.tema #card8{
+    background-color: #26303b;
+    border: #26303b;
+}
+body.tema .txts{
+    color: #181818;
+}
+body.tema #icons{
+    color: #00ADB5;
+}
+body.tema #cardProjeto1{
+    background-color: #26303b;
+    border-bottom: solid 3px #00ADB5;
+}
+body.tema #cardProjeto2{
+    background-color: #26303b;
+    border-bottom: solid 3px #00ADB5;
+}
+body.tema #cardProjeto3{
+    background-color: #26303b;
+    border-bottom: solid 3px #00ADB5;
+}
+body.tema .formas-contatos i{
+    color: #181818;
+}
+body.tema .contact-item{
+    color: #181818;
+}

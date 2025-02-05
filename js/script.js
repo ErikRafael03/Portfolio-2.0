@@ -164,3 +164,13 @@ function tirartxt8() {
     txt.style.display = 'block'
     txtF.style.display = 'none'
 }
+
+// TEMA
+let trilho = document.getElementById('trilho')
+let body = document.querySelector('body')
+
+trilho.addEventListener('click', ()=> {
+    trilho.classList.toggle('tema')
+    body.classList.toggle('tema')
+})
+// TEMA

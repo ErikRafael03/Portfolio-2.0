@@ -27,7 +27,9 @@
         display: none;
     }
 
-    .btn-abrir-menu,
+    .btn-abrir-menu{
+        display: block;
+    }
     .nav-mobile {
         display: block;
         margin-left: 85%;
@@ -49,6 +51,13 @@
     }
     #txt-inicio{
         margin-right: 0%;
+    }
+    .dark{
+        align-items: center;
+        align-content: center;
+    }
+    .dark .trilho{
+        margin-top: 20px;
     }
     /*********** INICIO********* */
 
